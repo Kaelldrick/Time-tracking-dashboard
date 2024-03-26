@@ -1,0 +1,17 @@
+#root {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 254px));
+  grid-template-rows: repeat(2, 243px);
+  height: 100%;
+  gap: 30px;
+}
+
+@media screen and (width<=1050px) {
+  #root {
+    grid-template-columns: 328px;
+    grid-template-rows: 203px repeat(6, 159px);
+    gap: 0;
+    row-gap: 30px;
+    margin: 82px 0;
+  }
+}
