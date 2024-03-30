@@ -15,11 +15,11 @@ function App() {
     'Self-Care': 'bg-Soft_orange'
   }
 
-  let [valor, setValor] = useState("weekly");
+  const [valor, setValor] = useState("weekly");
 
   function handleClick(e) {
     if (e.target.tagName === 'SPAN') {
-      setValor(valor = e.target.textContent.toLowerCase());
+      setValor(e.target.textContent.toLowerCase());
     }
   }
 
